@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reaction</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./assets/main.css">
+    <script src="./js/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-wrapper">
+        <!-- stack three container divs on each other -->
+        <!-- first container is the blue box -->
+        <!-- this container shows starting instruction and result -->
+        <div class="container" onclick="start()">
+            <!-- description that displays instruction and results  -->
+            <div class="description">
+                <div class="mainText">Click to Start</div>
+                <div class="smallText">When the red box turns green, click as quickly as possible</div>
+            </div>
+            <!-- status includes average time and number of retries -->
+            <div class="statusContainer">
+                <div class="status">
+                    <div class="title">Average&nbsp|&nbsp</div>
+                    <div class="average">0ms</div>
+                </div>
+                <div class="status">
+                    <div class="title">Tries&nbsp|&nbsp</div>
+                    <div class="tries">0</div>
+                </div>
+            </div>
+        </div>
+        <!-- second container is the red box -->
+        <!-- this is the waiting container, switches to green in a random time interval -->
+        <div class="container">
+            <div class="description">
+                <div class="mainText">Wait for green</div>
+                <div class="smallText">&nbsp</div>
+            </div>
+            <div class="statusContainer">
+                <div class="status">
+                    <div class="title">Average&nbsp|&nbsp</div>
+                    <div class="average">0ms</div>
+                </div>
+                <div class="status">
+                    <div class="title">Tries&nbsp|&nbsp</div>
+                    <div class="tries">0</div>
+                </div>
+            </div>
+        </div>
+        <!-- third container is the green box -->
+        <!-- reaction time will be calculated when user click this box -->
+        <div class="container">
+            <div class="description">
+                <div class="mainText">Click!</div>
+                <div class="smallText">&nbsp</div>
+            </div>
+            <div class="statusContainer">
+                <div class="status">
+                    <div class="title">Average&nbsp|&nbsp</div>
+                    <div class="average">0ms</div>
+                </div>
+                <div class="status">
+                    <div class="title">Tries&nbsp|&nbsp</div>
+                    <div class="tries">0</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
