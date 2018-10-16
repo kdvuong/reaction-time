@@ -41,13 +41,18 @@ function green() {
     };
 }
 
-function result(elapsed) {
+function result(e) {
+    elapsed = e;
     document.getElementsByClassName("container")[2].style.zIndex = 1;
     list.push(elapsed + list[count - 1]);
     var average = Math.round(list[count] / count) + "ms";
     tries += 1;
     document.getElementsByClassName("mainText")[0].innerHTML = elapsed + "ms";
-    document.getElementsByClassName("smallText")[0].innerHTML = "Click to keep going";
+    if (elapsed <= 100) {
+        document.getElementsByClassName("smallText")[0].innerHTML = "Oh really...Are you sure this was not luck?";
+    } else {
+        document.getElementsByClassName("smallText")[0].innerHTML = "Click to keep going";
+    }
     for (let i = 0; i < averageText.length; i++) {
         averageText[i].innerHTML = average;
         triesText[i].innerHTML = tries;
