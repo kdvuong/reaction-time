@@ -1,6 +1,8 @@
 # reaction-time
 Recreating reaction time app at humanbenchmark.com/tests/reactiontime
 
+**Demo:** https://www.khangdv.com/reaction-time
+
 **How it works**
 
 I began by creating 3 different div boxes, stacking on each other.
