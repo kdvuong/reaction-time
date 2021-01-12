@@ -1,7 +1,7 @@
 # reaction-time
 Recreating reaction time app at humanbenchmark.com/tests/reactiontime
 
-**Demo:** https://www.kdvuong.github.io/reaction-time
+**Demo:** https://kdvuong.github.io/reaction-time/
 
 **How it works**
 
